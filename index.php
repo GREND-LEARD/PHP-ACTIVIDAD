@@ -80,3 +80,19 @@ class Biblioteca {
     }
 }
 
+$biblioteca = new Biblioteca();
+
+echo $biblioteca->agregarLibro(new Libro("Libro 1", "Autor 1")) . "<br>";
+echo $biblioteca->agregarLibro(new Libro("Libro 2", "Autor 2")) . "<br>";
+echo $biblioteca->agregarLibro(new Libro("Libro 3", "Autor 3")) . "<br>";
+
+
+echo $biblioteca->listarLibros() . "<br>";
+
+echo $biblioteca->prestarLibro("Libro 2") . "<br>";
+
+echo $biblioteca->listarLibros() . "<br>";
+
+echo $biblioteca->devolverLibro("Libro 2") . "<br>";
+
+echo $biblioteca->listarLibros() . "<br>";
