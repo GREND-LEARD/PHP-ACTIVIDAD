@@ -82,9 +82,8 @@ class Biblioteca {
 
 $biblioteca = new Biblioteca();
 
-echo $biblioteca->agregarLibro(new Libro("Libro 1", "Autor 1")) . "<br>";
-echo $biblioteca->agregarLibro(new Libro("Libro 2", "Autor 2")) . "<br>";
-echo $biblioteca->agregarLibro(new Libro("Libro 3", "Autor 3")) . "<br>";
+echo $biblioteca->agregarLibro(new Libro("Libro 100 años de soledad", "Gabriel García Márquez")) . "<br>";
+echo $biblioteca->agregarLibro(new Libro("1984", "George Orwell")) . "<br>";
 
 
 echo $biblioteca->listarLibros() . "<br>";
