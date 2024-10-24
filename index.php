@@ -34,7 +34,7 @@
         button[type="submit"]:hover {
             background-color: #45a049;
         }
-        
+
     </style>
 </head>
 <body>
@@ -52,7 +52,7 @@
         $inputNotas = $_POST['notas'];
         $notas = array_map('floatval', explode(',', $inputNotas)); // Convertir a array de números
 
-        // Comprobar si las notas son válidas
+        // Comprobar s i las notas son válidas
         if (empty($notas) || array_filter($notas, 'is_nan')) {
             echo "Por favor, introduce notas válidas.";
         } else {
